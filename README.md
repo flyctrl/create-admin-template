@@ -16,7 +16,7 @@
 
 > 请勿修改或禁用 eslint 的规范检测
 
-> elsint 规则参考：
+> eslint 规则参考：[.eslint.js](http://192.168.0.83:8880/baosheng/create-admin-template/blob/master/.eslintrc.js)
 
 #### 目录结构
 
