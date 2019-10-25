@@ -205,6 +205,14 @@ meta : {
 
 ```
 
+## Git 分支命名规范
+
+1. 每次新需求都需要基于 master 分支进行开发；
+2. 在发布上线之前需要先合并至 master 分支，然后从 master 分支进行发布，禁止直接修改 master 分支或用 dev 分支发布，master 分支只用于合并和发布；
+3. 新需求分支命名规范：基分支-需求名(功能名)-日期，如：master-sales-20191025
+4. 修复 bug 分支命名规范：fix-基分支-bug 名-日期, 如：fix-master-login-20191025 或者 fix-sales-login-20191025
+5. 每次更新需要根据实际场景写 commit
+
 ## 构建
 
 ```bash
@@ -225,14 +233,6 @@ npm start
 ```
 
 浏览器访问 [http://localhost:9090](http://localhost:9090)
-
-## Git 分支命名规范
-
-1. 每次新需求都需要基于 master 分支进行开发；
-2. 在发布上线之前需要先合并至 master 分支，然后从 master 分支进行发布，禁止直接修改 master 分支或用 dev 分支发布，master 分支只用于合并和发布；
-3. 新需求分支命名规范：基分支-需求名(功能名)-日期，如：master-sales-20191025
-4. 修复 bug 分支命名规范：fix-基分支-bug 名-日期, 如：fix-master-login-20191025 或者 fix-sales-login-20191025
-5. 每次更新需要根据实际场景写commit
 
 ## 发布
 
