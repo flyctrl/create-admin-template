@@ -58,7 +58,7 @@
 #### 目录文件说明
 
 1. assets 文件夹需要按页面进行放置，**<font color=red>命名方式必须与 views 文件夹的名称一一对应</font>**
-2. 所有的工具类的函数必须写在 utils 文件夹的 index.js 文件内(即使函数只有一处使用)，并加上注释，然后完善 util.md，markdown 的书写规则见 util.md；
+2. 所有的工具类的函数必须写在 utils 文件夹的 index.js 文件内(即使函数只有一处使用)，并加上注释，然后完善 [util.md](http://192.168.0.83:8880/baosheng/create-admin-template/blob/master/util.md)，markdown 的书写规则见 [util.md](http://192.168.0.83:8880/baosheng/create-admin-template/blob/master/util.md)；
 3. 所有的请求接口需放在 api 文件夹内统一管理，**<font color=red>命名方式必须与 views 文件夹的名称一一对应</font>**，页面的请求函数放置于二级目录，公共组件的请求函数放置于 components 文件夹内，公共请求函数放置在 api 文件夹的一级目录即可；
 
 Demo:
@@ -81,7 +81,7 @@ Demo:
 - <font color="green">element-variables.scss</font>：element-ui 的 slider 和 menu 部分的主题色常量的配置
 - <font color="green">element-ui.scss</font>：element-ui 全局样式的重定义，细节可在开发过程中逐步修改
 - <font color="green">variables.scss</font>：颜色和字体的配置，所有使用的公用的主题色、常用灰色、字体色、字体大小都需要使用它
-- <font color="green">mixin.scss</font>：经常需要使用的样式的函数（比如 position 和 flex）,在定义 mixin.scss 的时候，变量必须赋默认值，方便灵活应用，书写完毕后并完善 mixincss.md 文档
+- <font color="green">mixin.scss</font>：经常需要使用的样式的函数（比如 position 和 flex）,在定义 mixin.scss 的时候，变量必须赋默认值，方便灵活应用，书写完毕后并完善 [mixincss.md](http://192.168.0.83:8880/baosheng/create-admin-template/blob/master/mixincss.md) 文档
 
 Demo:
 
@@ -232,6 +232,7 @@ npm start
 2. 在发布上线之前需要先合并至 master 分支，然后从 master 分支进行发布，禁止直接修改 master 分支或用 dev 分支发布，master 分支只用于合并和发布；
 3. 新需求分支命名规范：基分支-需求名(功能名)-日期，如：master-sales-20191025
 4. 修复 bug 分支命名规范：fix-基分支-bug 名-日期, 如：fix-master-login-20191025 或者 fix-sales-login-20191025
+5. 每次更新需要根据实际场景写commit
 
 ## 发布
 
