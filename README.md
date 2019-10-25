@@ -20,7 +20,7 @@
 
 #### 目录结构
 
-```
+```bash
 ├── build                      # 构建相关
 ├── mock                       # 项目mock 模拟数据
 ├── plop-templates             # 基本模板
@@ -63,7 +63,7 @@
 
 Demo:
 
-```
+```bash
 ├── api                         # api文件夹
 │   └── home                    # 首页
         └── home.js             # 首页的请求接口
@@ -85,7 +85,7 @@ Demo:
 
 Demo:
 
-```
+```scss
 @mixin flexer(
   $display: flex,
   $direction: row,
@@ -112,7 +112,7 @@ Demo：
 
 方式一：
 
-```
+```bash
 ├── views                       # views文件夹
 │   └── home                    # 首页
         ├── components          # 首页的组件
@@ -125,7 +125,7 @@ Demo：
 
 方式二（子组件复杂时推荐使用）：
 
-```
+```bash
 ├── views                       # views文件夹
 │   └── home                    # 首页
         ├── components          # 首页的组件
@@ -148,7 +148,7 @@ Demo：
 
 Demo:
 
-```
+```javascript
 methods: {
     _setArraryType() { //私有函数
         ...
@@ -168,7 +168,7 @@ methods: {
 
 Demo:
 
-```
+```scss
 .app-content {
     &-header {
         ...
@@ -187,19 +187,22 @@ Demo:
 
 ## 路由配置
 
-```
-hidden: true 如果设置为true，则在边栏中将不会显示项目（默认值为false）
-alwaysShow: true 如果设置为true，则始终显示根菜单, 如果未设置alwaysShow，当项目具有多个子路径时，它将变为嵌套模式，否则不会显示根菜单
-redirect: noRedirect 如果设置为noRedirect，则不会在面包屑中重定向
-name:'router-name'  必填，主要是用在keep-alive组件上
+```javascript
+{
+hidden: true, //如果设置为true，则在边栏中将不会显示项目（默认值为false）
+alwaysShow: true, //如果设置为true，则始终显示根菜单, 如果未设置alwaysShow，当项目具有多个子路径时，它将变为嵌套模式，否则不会显示根菜单
+redirect: noRedirect, //如果设置为noRedirect，则不会在面包屑中重定向
+name:'router-name',  //必填，主要是用在keep-alive组件上
 meta : {
-    roles: ['admin','editor'] 控制页面角色（可以设置多个角色）
-    title: 'title' 侧栏和面包屑中的名称显示（推荐设置）
-    icon: 'svg-name' 图标显示在侧栏中。
-    noCache: true 如果设置为true，则不会缓存页面（默认为false）
-    breadcrumb: false 如果设置为false，则该项目将隐藏在面包屑中（默认值为true）
-    activeMenu: '/example/list' 如果设置路径，侧栏将突出显示您设置的路径
-  }
+    roles: ['admin','editor'], //控制页面角色（可以设置多个角色）
+    title: 'title', //侧栏和面包屑中的名称显示（推荐设置）
+    icon: 'svg-name', //图标显示在侧栏中。
+    noCache: true, //如果设置为true，则不会缓存页面（默认为false）
+    breadcrumb: false, //如果设置为false，则该项目将隐藏在面包屑中（默认值为true）
+    activeMenu: '/example/list' //如果设置路径，侧栏将突出显示您设置的路径
+    }
+}
+
 ```
 
 ## 构建
