@@ -8,7 +8,7 @@
 
 > 说明：开发之前需要引入配置文件 setting.json，主要是依据当前项目的 eslint 规则进行的配置
 
-> 下载地址：
+> 下载地址：[settings.json](http://192.168.0.83:8880/baosheng/create-admin-template/blob/master/settings.json 'settings.json')
 
 ## 开发规范
 
@@ -16,7 +16,7 @@
 
 > 请勿修改或禁用 eslint 的规范检测
 
-> eslint 规则参考：[.eslint.js](http://192.168.0.83:8880/baosheng/create-admin-template/blob/master/.eslintrc.js)
+> eslint 规则参考：[.eslintrc.js](http://192.168.0.83:8880/baosheng/create-admin-template/blob/master/.eslintrc.js)
 
 #### 目录结构
 
