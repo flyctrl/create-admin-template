@@ -185,6 +185,24 @@ Demo:
 }
 ```
 
+#### 常用文件夹的引用
+
+现在在 webpack 配置了 alias 方便引用资源，举个例子当你在某个视图组件中需要引用公共组件；不管你与那个组件的相对路径是怎样的，可以直接 import AddButton from 'components/AddButton'
+
+目前可以这样引用的有：
+
+> @: 对应 src 目录，vue 默认的标识
+
+> utils: 对应'src/utils/'
+
+> components: 对应'src/components/'
+
+> asserts: 对应'src/asserts/'
+
+> api: 对应'src/api/'
+
+> style: 对应'src/style/'
+
 ## 路由配置
 
 ```javascript
